@@ -1,18 +1,29 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import About from './Screens/About';
-import Project from './Screens/Project';
 import Contact from './Screens/Contact';
+import Project from './Screens/Project';
+import GradientBackground from './components/GradientBackground/GradientBackground';
 
-const App = () => {
+function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/projects" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <GradientBackground>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/project" element={<Project />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </GradientBackground>
+    </Router>
   );
 }
 
