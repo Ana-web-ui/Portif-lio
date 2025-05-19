@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Projects from '../components/Projects/Projects';
-import SyntheticaMobile from '../assets/images/SyntheticaMobile.png'
+import SyntheticaMobile from '../components/images/SyntheticaMobile.png'
 
 const Project = () => {
   return (
