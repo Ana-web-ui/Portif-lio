@@ -22,7 +22,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <div className="h-[1px] bg-white/100 mt-4"></div>
+      <div className="h-[2px] bg-white/100 mt-4"></div>
     </header>
   );
 };

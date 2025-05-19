@@ -3,13 +3,13 @@ import Ana from "../images/Ana.png";
 
 const AboutMe = () => {
   return (
-
+    /* Largura máx., centralização e padding geral */
     <div className="max-w-6xl mx-auto p-6 relative">
       {/* Título */}
       <h2 className="text-white text-3xl font-extrabold mb-6">Sobre Mim</h2>
 
 
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-9">
 
         <div className="bg-white rounded-[20px] p-8 flex-grow">
           <p className="text-black text-xl">
