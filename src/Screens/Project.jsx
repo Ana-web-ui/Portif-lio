@@ -20,6 +20,7 @@ const Project = () => {
               title="Synthetica Mobile"
               description="Aplicativo de informações no universo da Synthetica."
               image={SyntheticaMobile}
+              projectLink={"https://snack.expo.dev/@ana_carolina_leite/-synthetica"}
             />
 
             {/* Projeto 2 */}
@@ -28,6 +29,7 @@ const Project = () => {
               title="To-do List com FASTAPI"
               description="Um to-do list simples fazendo conexão com o backend usando o FastAPI."
               image={TodoList}
+              projectLink={"http://127.0.0.1:8000/"}
             />
 
             {/* Projeto 3 */}
@@ -36,6 +38,7 @@ const Project = () => {
               title="Future Energy"
               description="Um site para concientizar as pessoas sobre as energias renováveis"
               image={FutureEnergy}
+              projectLink={"https://green-energy-gs.vercel.app/"}
 
             />
           </div>

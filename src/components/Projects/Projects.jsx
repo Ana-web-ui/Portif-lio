@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Projects = ({ title, description, image }) => {
+const Projects = ({ title, description, image, projectLink }) => {
     return (
         <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-white hover:scale-105 transition-transform duration-300">
             <h3 className="text-xl font-semibold text-black mb-2">{title}</h3>
@@ -16,9 +17,12 @@ const Projects = ({ title, description, image }) => {
             )}
 
             <div className="flex justify-center mt-4">
-                <button className="py-2 px-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg shadow-md transition-colors duration-300">
+                <Link 
+                    to={projectLink} 
+                    className="py-2 px-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg shadow-md transition-colors duration-300 text-center"
+                >
                     Ver Projeto
-                </button>
+                </Link>
             </div>
         </div>
     )
